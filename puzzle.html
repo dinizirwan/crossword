@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kreuzwort</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(7, 40px);
+            grid-gap: 4px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        input.correct {
+            background-color: #8be28b; /* grün */
+        }
+
+        input.block {
+            background-color: #ccc;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Mini-Kreuzwort</h3>
+
+<div class="grid">
+    <!-- RAD -->
+    <input data-answer="R">
+    <input data-answer="A">
+    <input data-answer="D">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+
+    <!-- I -->
+    <input class="block">
+    <input data-answer="I">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+
+    <!-- C -->
+    <input class="block">
+    <input data-answer="C">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+
+    <!-- U -->
+    <input class="block">
+    <input data-answer="U">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+
+    <!-- L -->
+    <input class="block">
+    <input data-answer="L">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+    <input class="block">
+</div>
+
+<button onclick="check()">Prüfen</button>
+
+<script>
+    function check() {
+        document.querySelectorAll("input[data-answer]").forEach(cell => {
+            const correct = cell.dataset.answer;
+            const value = cell.value.toUpperCase();
+
+            if (value === correct) {
+                cell.classList.add("correct");
+            } else {
+                cell.classList.remove("correct");
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
