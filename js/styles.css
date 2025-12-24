@@ -1,0 +1,28 @@
+
+.button:hover{
+    animation-name: surprise;
+    -webkit-animation-name: surprise;
+    -moz-animation-name: surprise;
+    animation-duration: .8s;
+    -webkit-animation-duration: .8s;
+    -moz-animation-duration: .8s;
+}
+
+@keyframes surprise
+{
+    0% {transform: rotate(0deg) scale(1,1);;}
+    10% {transform: rotate(7deg) scale(2,2);}
+    20% {transform: rotate(-7deg) scale(2,2);}
+    30% {transform: rotate(7deg) scale(2,2);}
+    40% {transform: rotate(-7deg) scale(2,2);}
+    50% {transform: rotate(7deg) scale(2,2);}
+    60% {transform: rotate(-7deg) scale(2,2);}
+    70% {transform: rotate(7deg) scale(2,2);}
+    80% {transform: rotate(-7deg) scale(2,2);}
+    90% {transform: rotate(7deg) scale(2,2);}
+    100% {transform: rotate(0deg) scale(1,1);}
+}
+
+h1{
+    font-family: Arial, sans-serif ;
+}

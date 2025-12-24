@@ -2,11 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lauter</title>
+    <title>Eywaaaa was geht!!</title>
+    <style>
+        body {
+            background-image: url('src/image/fehlermeldung.PNG');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        p {
+            font-size: 1.9em;
+            color: black;
+        }
+
+        h1 {
+            color: white;
+            font-size: 5em;
+        }
+        .button-container{
+            text-align: center; /* Zentriert den Link horizontal */
+            margin-top: 20px;   /* Optional: Abstand nach oben */
+            width: 100%;
+            font-size: 70px;
+        }
+
+        .slide {
+            display: inline-block;
+            text-decoration: none;
+            animation-name: slide;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        .slide:hover {
+            transform: translateX(10px);
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes slide {
+            0% {transform: translateX(0);}
+            50% {transform: translateX(20px);}
+            100% {transform: translateX(0);}
+        }
+    </style>
 </head>
 <body>
-    <h1> Fehlermeldung: </h1>
-    <p> Das hat leider nicht funktioniert <br> bitte schreit lauterrrrrr. Dann klicke das hier</p>
-    <a href="puzzle.html" class="button"> hier </a>
+<a href="game.html" class="button"> zurück </a>
+<p> <br> <br> <br> <br> <br> </p>
+<p> <br> <br> <br> <br> <br> </p>
+<p> <br> <br> <br> <br> <br> </p>
+<p> <br> <br> <br> <br> <br> </p>
+<p> <br> <br> <br> <br> <br> </p>
+<p> <br> <br> <br> <br> <br> </p>
+<p> <br> <br>  </p>
+<div class="button-container">
+    <a href="puzzle.html" class="slide"> weiter </a>
+</div>
 </body>
 </html>

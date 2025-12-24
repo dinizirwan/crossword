@@ -3,14 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Eywaaaa was geht!!</title>
+    <style>
+        body {
+            background-image: url('src/image/uns.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        p {
+            font-size: 1.9em;
+            color: black;
+        }
+
+        h1 {
+            color: white;
+            font-size: 5em;
+        }
+        .button-container{
+            text-align: center; /* Zentriert den Link horizontal */
+            margin-top: 20px;   /* Optional: Abstand nach oben */
+            width: 100%;
+            font-size: 70px;
+        }
+
+        .slide {
+            display: inline-block;
+            text-decoration: none;
+            animation-name: slide;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        .slide:hover {
+            transform: translateX(10px);
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes slide {
+            0% {transform: translateX(0);}
+            50% {transform: translateX(20px);}
+            100% {transform: translateX(0);}
+        }
+    </style>
 </head>
 <body>
     <a href="index.html" class="button"> zurück </a>
-    <h1> Nicht so einfach hihihihihi </h1>
-    <p> Erstmal wollte ich dir sagen dass ich dir so sehr liebe. Ich bin so dankbar dass ich dich in meinem Leben habe. Und weil du so besonders
-    bist in meinem Leben, habe ich was besonderes programmiert für dich :) <br> <br>
-    Und zwar ein crossword puzzle. Du sollst raten hihihi, wenn du alle richtig hast kriegst du die Geschenke <3 </p>
-    <p> Wenn du bereit bist schreit <h1> okayyyyyyyyy letsssgooooooooooooo!!!! </h1> und den button da unten klickt</p>
-    <a href="prank.html" class="button"> hier </a>
+    <p> Erstmal wollte ich dir sagen dass ich dich so sehr liebe. Ich bin so dankbar dass ich teils von dein Leben sein darf.<br> <br>
+        Dieses Jahr haben so viele sachen erlebt, die hohe sind sehr hoch und die tiefe sind sehr tief. <br>
+        Nicht desto trotz haben wir das alles durchgemacht und zwar zusammen. <br>
+        Ich will dass du es weisst, dass du sehr besonders und wunderbar und schoen und toll bist. <br>
+        Deine positive Art und Liebe geben mir Kraft und wenn ich in deine Nähe bin,
+        machst du alles leichter. Du bringst Ruhe, Freude und Wärme, und genau das macht
+        dich so wertvoll. Es gibt keine materielle Sachen auf dieser Welt, die jemals ausreichen
+        würden, um dir für all das zu danken. Aber nichtsdestotrotz habe ich trotzdem vor
+        irgendwannmal was richtig Geiles und Schönes für dich zu schenken.
+
+     </p>
+    <p> Wenn du bereit bist schreit </p>
+    <h1> okayyyyyyyyy letsssgooooooooooooo!!!! </h1>
+    <p> und den button da unten klickt </p>
+    <div class="button-container">
+        <a href="prank.html" class="slide"> weiter </a>
+    </div>
 </body>
 </html>
